@@ -1,7 +1,10 @@
+using DHF_Viewer_WebApp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<ViewerService>();
 
 var app = builder.Build();
 
